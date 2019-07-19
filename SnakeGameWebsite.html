@@ -436,7 +436,8 @@
          this._onTimeExpired = cb;
          };
          
-         // Countdown// .120 seconds is starting interval for snake.
+         // Countdown
+         // .120 seconds is starting interval for snake.
          var snakeMovementInterval = 120;
          var canvas = document.getElementById("canvas");
          var ctx = canvas.getContext("2d");
@@ -581,8 +582,8 @@
          Snake.prototype.checkCollision = function (head) {
              var leftCollision = (head.col === 0);
              var topCollision = (head.row === 0);
-             var rightCollision = (head.col === widthInBlocks-blocksize);
-             var bottomCollision = (head.row === heightInBlocks-blocksize);
+             var rightCollision = (head.col === widthInBlocks-1);
+             var bottomCollision = (head.row === heightInBlocks-1);
          
              var wallCollision = leftCollision || topCollision || rightCollision || bottomCollision;
          
@@ -661,6 +662,6 @@
    </head>
    <body>
       <br>
-      <a href="https://sites.google.com/view/gamewebsite123/home">Return to home</a>
+      <a href="YashSingh.html">Return to home</a>
    </body>
 </html>
