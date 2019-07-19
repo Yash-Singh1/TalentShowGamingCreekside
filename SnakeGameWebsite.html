@@ -581,8 +581,8 @@
          Snake.prototype.checkCollision = function (head) {
              var leftCollision = (head.col === 0);
              var topCollision = (head.row === 0);
-             var rightCollision = (head.col === widthInBlocks-1);
-             var bottomCollision = (head.row === heightInBlocks-1);
+             var rightCollision = (head.col === widthInBlocks-blocksize);
+             var bottomCollision = (head.row === heightInBlocks-blocksize);
          
              var wallCollision = leftCollision || topCollision || rightCollision || bottomCollision;
          
